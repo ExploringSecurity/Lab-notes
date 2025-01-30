@@ -39,27 +39,9 @@ Kali Linux image (latest version): [https://www.kali.org/get-kali/](https://www.
 7. The default login is kali for the user and kali for the password!
 
 
+## Updatinh Kali
 
+1. Open a terminal and run: ```sudo apt update && sudo apt upgrade```
 
-6. 
-7. Create a new VM: Open VirtualBox and click “New.” Choose “Expert” mode for more control.
-
-
-
-
-
-1. [Download and install Oracle VirtualBox](https://www.virtualbox.org/manual/UserManual.html#intro-installing)
-2. [Download and install Kali Linux](https://www.kali.org/docs/virtualization/install-virtualbox-guest-vm/)
-3. [Tweaking our Initial Kali setup](3_tweaking_kali.md)
-4. [Getting Started with Github](4_introducing_github.md)
-5. [Installing, Configuring and using VSCode](5_setup_vscode.md)
-
-
-## Older instructions:
-1. [Getting a VMWare Workstation Pro Licence](1_vmware_licence.md)
-2. [Downloading and using Kali Linux](2_kali_linux.md)
-3. [Tweaking our Initial Kali setup](3_tweaking_kali.md)
-4. [Getting Started with Github](4_introducing_github.md)
-5. [Installing, Configuring and using VSCode](5_setup_vscode.md)
 
 
