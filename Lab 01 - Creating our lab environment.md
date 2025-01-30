@@ -33,10 +33,12 @@ Kali Linux image (latest version): [https://www.kali.org/get-kali/](https://www.
 
 4. Start VirtualBox and select ‘Add’. We then navigate to the location our VM is downloaded and find the .vbox file.
 5. You can change any of the settings to suit your own system, and then start the VM.
-6. The default login is kali for the user and kali for the password!
+   > 💡 Base Memory: Allocate a minimum of 2048 MB RAM (more for better performance).  
+   > 💡 Processors: 1 CPU (more for better performance)
 
-> 💡 Base Memory: Allocate a minimum of 2048 MB RAM (more for better performance).  
-> 💡 Processors: 1 CPU (more for better performance)
+7. The default login is kali for the user and kali for the password!
+
+
 
 
 6. 
