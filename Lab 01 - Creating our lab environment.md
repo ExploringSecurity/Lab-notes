@@ -1,22 +1,17 @@
 # Lab 1: Configuring our lab environment
 
-Most of the assignments and labs for this module are best completed using a Linux environment. I've outlined a suggested lab environment, but you're free to use your own setup. Any lab instructions or video demo's for the module will use this suggested setup so your life will probably be easier if you are using the same setup. 
+The main assessment for this module is a large practical test during exam week. The assessment will be a simulated penetration test on a small company network, for both their wired and wireless networks. To complete the penetration test you'll need your own laptop, hardware, backups etc. and all the tools and any resources you'll need for the day. Having a fully working attack machine will be essential. 
 
-> :warning: I think all the assignments/labs can still be completed on Windows/Mac, but I won't be troubleshooting any issues outside of the suggested lab environment. 
+All of the lab activities and in-class demos will be completed using the setup outlined below, however you are free to use any setup and tools you prefer. 
+> :warning: I won't be troubleshooting any issues on different setups, outside of the suggested lab environment. 
 
 ___
 
 ## Recommended Lab Setup:
 
-1. A hypervisor to allow us run virtual machines.  
--- VirtualBox 
-2. A Linux VM  
--- Kali Linux recommended, but any modern linux VM should be fine
-3. An IDE for our coding  
--- VS Code 
-4. Version control / Hosting  
--- Git / Github
-
+1. A VirtualBox hypervisor 
+2. Kali Linux VM  
+-- recommended, but any modern linux VM should be fine
 ___
 
 
