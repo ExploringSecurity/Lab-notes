@@ -36,12 +36,6 @@ Kali Linux image (latest version): [https://www.kali.org/get-kali/](https://www.
    > 💡 Base Memory: Allocate a minimum of 2048 MB RAM (more for better performance).  
    > 💡 Processors: 1 CPU (more for better performance)
 
-7. The default login is kali for the user and kali for the password!
+> :writing_hand: The default login is kali for the user and kali for the password!
 
-
-## Updatinh Kali
-
-1. Open a terminal and run: ```sudo apt update && sudo apt upgrade```
-
-
-
+6. Update your kali, Open a terminal and run: ```sudo apt update && sudo apt upgrade```
