@@ -24,15 +24,16 @@ Kali Linux image (latest version): [https://www.kali.org/get-kali/](https://www.
 
 1. Install VirtualBox - Run the downloaded installer and follow the on-screen instructions.
    
-2. Extract the Kali VirtualBox image. The Downloaded image file is a 7zip compressed archive, so you'll first need to extract the VirtualBox image before importing to Virtualbox.  
+2. Extract the Kali VirtualBox image.
+> :warning The Downloaded image file is a 7zip compressed archive, so you'll first need to extract the VirtualBox image before importing to Virtualbox.  
    
    -- On windows you can download the offical 7zip app to extract the image. [https://www.7-zip.org/](https://www.7-zip.org/)  
    -- On Linux you can type ```7z x filename.7z```  
    -- On Mac the default archive tool should be able to extract the image.  
 
-3. Start VirtualBox and select ‘Add’. We then navigate to the location our VM is downloaded and find the .vbox file.
-4. You can change any of the settings to suit your own system, and then start the VM.
-5. The default login is kali for the user and kali for the password!
+4. Start VirtualBox and select ‘Add’. We then navigate to the location our VM is downloaded and find the .vbox file.
+5. You can change any of the settings to suit your own system, and then start the VM.
+6. The default login is kali for the user and kali for the password!
 
 > 💡 Base Memory: Allocate a minimum of 2048 MB RAM (more for better performance).  
 > 💡 Processors: 1 CPU (more for better performance)
