@@ -21,7 +21,7 @@ ___
 ___
 
 
-### Creating an account on the TryHackMe.com website. 
+### 2.1 Creating an account on the TryHackMe.com website. 
 
 To get started you will need to visit the TryHackMe.com website and click the Join now button. You will be asked for your registration details before you sign up. 
 
@@ -35,7 +35,7 @@ Once you’ve created your account, verify the sign-up confirmation email which 
 ___
 
 
-### Enrol yourself onto the ‘Pre Security’ learning path.  
+### 2.2 Enrol yourself onto the ‘Pre Security’ learning path. 
 
 Once you have successfully created your account and logged in, you will be asked to enrol onto a learning path. We’ll start by enrolling on the Pre Security learning path. Learning paths are essentially a collection of tutorials, related to a particular theme such as ‘Web Fundamentals’ or ‘Cyber Defense’ etc.  
 
@@ -51,7 +51,7 @@ You’ll notice that this learning path also offers a certificate of completion 
 ___
 
 
-### Completing our first room  
+### 2.3 Completing our first room  
 
 Each room has a learning section with new content for us to learn and a number of different tasks, each with a number of questions you’ll need to answer to complete that task. Some rooms will have websites or VMs associated with them for us to attack. 
  
@@ -60,7 +60,7 @@ Try complete your first THM room by following all the instructions and answering
 Once you have completed your first room you should continue onto the networks fundamentals section and work your way through the remaining rooms. Over the next two weeks you should aim to have completed the Pre security learning path.   
 ___
 
-### Learn to search all available rooms for suitable activities.  
+### 2.4 Learn to search all available rooms for suitable activities.  
 
 Now that you have completed your first rooms, let’s look at how to find more rooms on the THM platform.  
 
@@ -69,7 +69,7 @@ At the top of your dashboard select the ‘Learn’ option to see all the ‘Hac
 Change the drop-down menus to show only ‘Free’ and ‘Easy’ rooms and browse through some of the options available for you to join.  
 ___
  
-### Where Next? 
+### 2.5 Where Next? 
 
 The more activities and CTFs etc you complete the more points to gain on the THM website, so feel free to explore and complete whatever rooms are of most interest to you. We’ll be working our way through more rooms each week, as we learn about new tools and techniques as part of the module.
 
