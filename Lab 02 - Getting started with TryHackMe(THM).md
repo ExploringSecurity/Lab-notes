@@ -60,7 +60,7 @@ ___
 
 Each room has a learning section with new content for us to learn and a number of different tasks, each with a number of questions you’ll need to answer to complete that task. Some rooms will have websites or VMs associated with them for us to attack. 
  
-Try complete your first THM room by following all the instructions and answering the questions for each task. 
+Try complete your first THM room ‘Offensive Security Intro’ by following all the instructions and answering the questions for each task. 
 
 Once you have completed your first room you should move onto the next step.
 
