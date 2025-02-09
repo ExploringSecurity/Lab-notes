@@ -1,6 +1,6 @@
 # Lab 3: Host Discovery
 
-Estimated Time: 50 Mins
+Estimated Time: 100 Mins
 ___
 
 
