@@ -19,7 +19,9 @@ ___
 3. Learn when to use an ARP scan, and what tools to use. 
     - Arping 
     - netdiscover 
-4. Learn how to use the de facto port scanning tool Nmap. 
+4. Learn how to use the de facto port scanning tool Nmap.
+5. Nmap Live Host Discovery
+6. Learning to use RustScan.  
 ___
 
 
@@ -79,8 +81,12 @@ One of the go to tools in the world of security is the versatile Nmap scanning t
 Sign up for the Nmap room on THM and complete the introduction and exercises listed in the room. 
 ___
 
+### 3.5 Nmap Live Host Discovery
 
-### 3.5 Learning to use RustScan.  
+Again on TryHackMe,search and find the 'Nmap Live Host Discovery' room and complete the full room to learn how to use Nmap to discover live hosts using ARP scan, ICMP scan, and TCP/UDP ping scan.
+
+
+### 3.6 Learning to use RustScan.  
 
 A very new modern scanning tool is RustScan. It is extremely fast and is designed to be used with Nmap (not as an Nmap replacement) to massively speed up full network scans.  
 
