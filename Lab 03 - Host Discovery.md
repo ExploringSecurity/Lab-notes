@@ -86,7 +86,7 @@ ___
 Again on TryHackMe,search and find the 'Nmap Live Host Discovery' room and complete the full room to learn how to use Nmap to discover live hosts using ARP scan, ICMP scan, and TCP/UDP ping scan.
 
 
-### 3.6 Learning to use RustScan.  
+### 3.6 Learning to use RustScan. (Optional)
 
 A very new modern scanning tool is RustScan. It is extremely fast and is designed to be used with Nmap (not as an Nmap replacement) to massively speed up full network scans.  
 
