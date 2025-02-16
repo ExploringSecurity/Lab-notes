@@ -24,6 +24,8 @@ ___
 
 ### 4.1 Understanding Search engines and Google dorking.
 
+![google dorking THM Room](images/dorking.png)
+
 Search engines can reveal huge amounts of information, and learning to use the more advanced options can help you utilise the full power of some of the search engines. To get started we will looking at the google dorking room on THM. Join the room and watch the video walkthrough of the problems.  
 
 While Google is by fair the most popular, other search engines such as Bing offer similar capabilities so its worth checking multiple search engines and understanding the advanced options available on each of them.
