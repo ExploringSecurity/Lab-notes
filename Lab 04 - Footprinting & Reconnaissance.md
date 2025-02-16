@@ -1,6 +1,6 @@
 # Lab 4: Footprinting & Reconnaissance
 
-Estimated Time: 100 Mins
+Estimated Time: 150 Mins
 ___
 
 In this lab we’ll look at just a small subset of the vast array of recon tools available. We’ll focus on tools listed for the PenTest+ certification exam and some google dorking. Our Practical exam at the end of term will also have some related questions so it's a topic you should'nt ignore. Let all topics in pentesting, it requires lots of practice, time and testing to find the right tools to suit your own needs. We will quickly look at how to get started with the tools listed and complete some of the related rooms on the TryHackMe platform.
