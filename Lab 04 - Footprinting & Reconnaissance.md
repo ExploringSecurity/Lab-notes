@@ -126,6 +126,7 @@ ___
 ### 4.7 FOCA
 
 ![foca screenshot](/images/foca.png)
+
 Another interesting way of conducting open-source intelligence gathering is through metadata analysis. This type of analysis can be conducted by searching through documents hosted on websites for hidden information. Files created in Office products store hidden properties within the file that may contain sensitive information, such as the author name (username), email address, etc. If you open up a Microsoft Word document, then click Info (or the File tab, depending on the version of Word you are using) you will see the property information stored for the document, similar to what’s shown below. Fingerprinting Organizations with Collected Archives, or FOCA for short, is a Microsoft Windows–based tool used to automate this discovery process. The latest version of FOCA can be downloaded from the developer’s GitHub page at https://github.com/ElevenPaths/FOCA. FOCA uses the Google, Bing, and DuckDuckGo search engines to find and analyse common document types, such as Microsoft Office, Open Office, and Adobe PDF.
 ___
 
