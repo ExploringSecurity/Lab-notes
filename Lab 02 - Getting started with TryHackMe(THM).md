@@ -84,5 +84,6 @@ The more activities and CTFs etc you complete the more points to gain on the THM
 
 While using the browser-based attack box is fine for some of the basic labs you will want to have your own attack VM for launching and running Penetration tests. 
 
-So you should already have downloaded and installed the latest Kali Linux OS as a VM on your own machine, So the last part of this lap is to find and complete the OpenVPN room from THM. 
+So you should already have downloaded and installed the latest Kali Linux OS as a VM on your own machine, So the last part of this lap is to find and complete the OpenVPN room from THM.  
+
 ___
