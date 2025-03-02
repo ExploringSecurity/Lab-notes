@@ -1,9 +1,9 @@
-# Lab 5: Vulnerability Scanners
+# Lab 6: Introduction to Metasploit
 
-Estimated Time: 100 Mins
+Estimated Time: 130 Mins
 ___
 
-In this lab we’ll look have our first look at using vulnerability scanners. We'll look at two of the most popular free options, Nessus & OpenVAS. You should try out both and decide on your scanner of choice, you'll need a vulnerability scanner setup for your practical exam and you should be familar with how it works.
+Metasploit is the most widely used exploitation framework. Metasploit is a powerful tool that can support all phases of a penetration testing engagement, from information gathering to post-exploitation. In this lab we'll do a quick introduction to the tool, and look at some demonstrations of how to use it.
 
 ___
 
@@ -11,53 +11,41 @@ ___
 ## In this lab we will: 
 
 In this lab we will:
-1.	Vulnerabilities 101: Understand the flaws of an application and apply your researching skills on some vulnerability databases.
-2.	Learn how to set up and use Nessus, a popular vulnerability scanner.
-3.	Learn the basics of threat and vulnerability management using Open Vulnerability Assessment Scanning
-4.	Scanning Metasploitable 1
+1. Metasploit introduction
+2. Metasploit demo against metasploitable 1
+3. Metasploit demo against windows 
+4. Using metasploit to exploit the Eternal Blue Windows vulnerability.
 
 ___
 
 
-### 5.1 Vulnerabilities 101: Understand the flaws of an application and apply your researching skills on some vulnerability databases.
+### 6.1 Metasploit introduction
 
-The hacks that we hear about in newspapers are from exploiting vulnerabilities. In this section, we're going to explain exactly what a vulnerability is, the types of vulnerabilities and how we can exploit these for success in our penetration testing endeavours.
+To get us started, and fill in some of the background details, you should complete the Metasploit: Introduction room on THM. This first room introduces and explains the basic of the Metasploit tool.
 
-- Complete the Vulnerabilities 101 room on THM
+- Complete the Metasploit: Introduction room on THM
 ___
 
 
-### 5.2 Learn how to set up and use Nessus, a popular vulnerability scanner.
+### 6.2 Metasploit demo against metasploitable 1
 
-Nessus vulnerability scanner is exactly what you think is its! A vulnerability scanner! It offer both a free and paid version and is a popular choice by pentesters. It uses techniques similar to Nmap to find and report vulnerabilities, which are then, presented in a nice GUI for us to look at. Nessus is different from other scanners as it doesn't make assumptions when scanning, like assuming the web application is running on port 80 for instance. 
+Once we've completed the introductory material, you instructor will show you a walkthrough of exploiting the metasploitable 1 VM from our earlier labs. You should try to complete the same walkthrough yourself on your own VM, and make sure you understand each of the steps performed.
 
-- Complete the Nessus room on THM
+- Use metasploit to get access to your metasploitable 1 VM.
 ___
 
 
-### 5.3 Learn the basics of threat and vulnerability management using Open Vulnerability Assessment Scanning
+### 6.3 Metasploit demo against windows 
 
-An alternative to Nesus is OpenVAS, an application used to scan endpoints and web applications to identify and detect vulnerabilities. Probably not as robust a scanner as Nessus, its still a popular choice maibnly because its complete free. This is not an end all be all solution but can help to get rid of any common vulnerabilities that may have slipped through the cracks.
+Old end of life products tend to always be vulnerable and obviously shouldn't appear on a live network because of the risks associated with such systems. Your instructor will show a walkthrough of exploiting a legacy windows XP system. If you'd like to attempt the same demo you can find the a Windows XP image and key, on the module resources section on Brightspace. 
 
-- Complete the OpenVas room on THM
+- Use metasploit to get access to Windows XP
 ___
 
 
-> ❗ You should pick one of the two scanners above as your vulnerability scanner of choice. Other options often used by students including Nmaps vulnerabilty scripts or Nikto are not full vulnerability scanners and aren't suitable for use on their own. You'll loose marks in your practical if you dont use a full vulnerbility scanner.
+### 6.4 Using metasploit to exploit the Eternal Blue Windows vulnerability.
 
+Similar to the last demo, but this time against a Win 7 system. The Blue room on THM steps you through performing a take over of a windows 7 system. Follow the steps to complete the room. 
 
-### 5.4 Scanning Metasploitable 1
-
-For this last section you'll need to performa vulnerability scan of our Metasploitable VM using both Nessus and OpenVAS and compare the results of both scanners.
-
-> ❗ You should have Metasploitable 1 setup from our previous online session, if you havent already got the VM setup, check out the video on Brightspace and a quick walkthrough in setting up the VM.
-
+- Complete the 'Blue' room on THM
 ___
-
-
-
-
-
- 
-
- 
