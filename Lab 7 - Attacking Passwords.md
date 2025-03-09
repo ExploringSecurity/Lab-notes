@@ -38,11 +38,11 @@ This is because some special characters need escaping and the \ is used before t
 
 #### 7.1.3 String Permutations
 Here there are two options.First options is when we will want to generate something based on the characters of a word. For example ```crunch 1 1 -p abc```  will produce the following list:
-
+[Picture1.png](images/Picture1.png)
  
 The second option is when we will want to create a list based on different words.For example the words blue and red can be bluered or redblue.We can achieve this with the command  
 ```crunch 1 1 -p pen test lab```
- 
+[Picture2.png](images/Picture2.png)
  
 #### 7.1.4 Splitting Wordlists
 
@@ -63,7 +63,7 @@ Alternatively you can use any other charset from the list that comes with crunch
 Now lets say that we want to create a wordlist that will contains the word pentestlab followed by 3 random characters.The command for that will be:  
 ```crunch 13 13 -f charset.lst lalpha -t pentestlab@@@```
 which will produce the following output:
- 
+[Picture3.png](images/Picture3.png)
  
 Alternatively if we want the word admin to be in the middle we can modify the command like this:  
 ```crunch 9 9 -f charset.lst -t @@admin@@```
