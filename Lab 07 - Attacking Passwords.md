@@ -10,6 +10,9 @@ In this lab we will:
 1. Using Crunch to generate custom word lists
 2. Learning to use Hydra
 3. Cracking windows and linux password hashes
+4. Cracking windows LM Hashes and SAM file
+5. Introduction to Hashcat
+6. THM hash cracking rooms
 
 ___
 
@@ -77,7 +80,17 @@ ___
 
 ### 7.2 Learning to use Hydra
 
-Learn about and use Hydra, a fast network logon cracker, to bruteforce and obtain a website's credentials.
+While John and hashcat are great at break password hashes if you’ve managed to somehow grab some, but often we just want to try brute force some webpage login or SSH or email server or whatever. For these scenarios, our go to tool is Hydra.
+
+Hydra is a brute force remote password cracking program; a quick system login password 'hacking' tool. We can use Hydra to run through a list and 'bruteforce' some authentication service. Imagine trying to manually guess someones password on a particular service (SSH, Web Application Form, FTP or SNMP) - we can use Hydra to run through a password list and speed this process up for us, determining the correct password.
+
+Hydra has the ability to bruteforce the following protocols: Asterisk, AFP, Cisco AAA, Cisco auth, Cisco enable, CVS, Firebird, FTP,  HTTP-FORM-GET, HTTP-FORM-POST, HTTP-GET, HTTP-HEAD, HTTP-POST, HTTP-PROXY, HTTPS-FORM-GET, HTTPS-FORM-POST, HTTPS-GET, HTTPS-HEAD, HTTPS-POST, HTTP-Proxy, ICQ, IMAP, IRC, LDAP, MS-SQL, MYSQL, NCP, NNTP, Oracle Listener, Oracle SID, Oracle, PC-Anywhere, PCNFS, POP3, POSTGRES, RDP, Rexec, Rlogin, Rsh, RTSP, SAP/R3, SIP, SMB, SMTP, SMTP Enum, SNMP v1+v2+v3, SOCKS5, SSH (v1 and v2), SSHKEY, Subversion, Teamspeak (TS2), Telnet, VMware-Auth, VNC and XMPP.
+
+For more information on the options of each protocol in Hydra, read the official Kali Hydra tool page: https://en.kali.tools/?p=220
+
+This shows the importance of using a strong password, if your password is common, doesn't contain special characters and/or is not above 8 characters, it is going to be prone to being guessed. 100 million password lists exist containing common passwords, so when an out-of-the-box application uses an easy password to login, make sure to change it from the default! Often CCTV camera's and web frameworks use admin:password as the default password, which is obviously not strong enough.
+
+Follow the Hydra introduction room on THM and watch the video walkthrough to learn how to get started with this powerful remote login brute forcing tool.
 
 - Complete the 'Hydra' room on THM
 ___
@@ -148,5 +161,24 @@ Now that we have all the passwords we can use them in order to connect remotely 
 more complex or hybrid passwords, you probably want to use a password list containing far more passwords, including hybrid passwords such "p@$$w0rd" that combine special
 characters into words. John has a pretty good password list itself.
 
+### 7.4 Cracking windows LM Hashes and SAM file
 
+We just demonstrated how to use John to crack some Linux passwords. Now see if you can figure out how to crack some windows passwords. You whatever tools you wish to try figure out the next two challenges.
+
+In the lab resources for this lab you should find an example of a windows LM password hash, you need to try figure out yourself how to crack this LM password hash, you should complete this before moving onto the next challenge. In the previous example we had done the work for you, and extracted the details from a SAM file, this time you’ll need to complete the entire process yourself. You might need to do some researching to figure this one out. Can you use the Windows Sam and System files together to get the user account and password?
+
+### 7.5 Introduction to Hashcat
+
+You should be somewhat familiar with hashcat from our secure communications module last semester, Hashcat is a similar tool to John, and can be used to brute force almost type of password hash. It is however a lot less user friendly than John, so can take a while to get used too, but it is perhaps the fasted hash cracking tool around, once you master it, so it is well worth taking the time and learning how to use it.
+
+See if you can complete the password cracking sections from the previous john section, and try break the same shadow files as earlier this time however using Hashcat rather than John.
+
+### 7.6 THM hash cracking rooms
+
+As well as brute forcing using John or Hashcat we can also take advanced on online hash cracking websites and services, there are plenty to choose from, just google to find a few to try. 
+
+Using a combination of online crackers, john or Hashcat try complete the two hashcracking challenge rooms on THM, you can read the writeups if you need some help but try complete as many of the hashes yourself before using the writeups for help.
+THM rooms to complete:
+•	Crack the Hash	
+•	Crack the Hash Level 2
 ___
