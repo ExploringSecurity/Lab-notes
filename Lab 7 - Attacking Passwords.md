@@ -72,10 +72,6 @@ Alternatively if we want the word admin to be in the middle we can modify the co
 
 Creating wordlists can facilitate your needs when performing a penetration test.Crunch of course offers a variety of options and combinations that a user can play with, look at the help pages for examples of how to create complex custom lists.Trying to brute force of course an application or a system with a wordlist can of course lock you out depending on the account lockout policy but it always helps if you can have your own custom wordlists that may be help you to obtain access.
 
-![image](https://github.com/user-attachments/assets/82558164-dd96-49d4-bf2e-f8e9d25092f1)
-
-
-- Complete the Metasploit: Introduction room on THM
 ___
 
 
@@ -89,7 +85,68 @@ ___
 
 ### 7.3 Cracking windows and linux password hashes
 
-Old end of life products tend to always be vulnerable and obviously shouldn't appear on a live network because of the risks associated with such systems. Your instructor will show a walkthrough of exploiting a legacy windows XP system. If you'd like to attempt the same demo you can find the a Windows XP image and key, on the module resources section on Brightspace. 
+#### 7.3.1 Cracking Linux Password Hashes using John the Ripper
+One of the first post exploitation activities when we have compromised a target is to obtain the passwords hashes in order to crack them offline. If we managed to crack the hashes then we might be able to escalate our privileges and to gain administrative access especially if we have cracked the administrator’s hash. In this tutorial we will see how to obtain and crack password hashes from a Unix box.
 
-- Use metasploit to get access to Windows XP
+Lets say that we have exploited a vulnerability and we have gained a remote shell to our target.The next step is to see the directories and files that exist on the remote system.
+
+1. On your kali terminal change to the root directory and view all the files and folders.  
+2. Switch to the /etc directory and look for the “passwd” and “shadow” files. The next step is to read the /etc/passwd file which contains all the accounts of the remote system.
+   
+In /etc/passwd the ':' (colon) is used separate fields, The passwd file presents information about the users (in the order shown below).
+
+- Username.  
+- Password. (using an x to indicate its been shadowed)  
+- User ID. (root will always be 0)  
+- Group ID.  
+- Comment (usually the users full name, or about their responsibilities).  
+- Users home directory.  
+- The users shell (Usually is set as a default of /bin/bash or /bin/sh)
+  
+Now that we have the list with the accounts of the remote system we can save that list in a file for later use, maybe something like users.txt.The next step is to obtain the passwords hashes. As we know in unix systems the password hashes are stored in the /etc/shadow location so we will run the command cat /etc/shadow in order to see them.
+
+In the /etc/shadow file you will find entries similar to this:  
+root:x6FH.R4PFYGL2:11901:0:32767:7:4:12:1073741831
+
+In /etc/shadow the ':' (colon) is used separate fields, The shadow file presents information about the users (in the order shown below).
+
+- Username.  
+- Encrypted password.  
+- Number of days since January 1st 1970, that the password was last changed.  
+- Number of days before the user is allowed to change their password.  
+- Number of days before the user must change their password.  
+- How many days in advance the user is warned of a password change.  
+- Number of days remaining for the user to change their password (else their account is disabled).  
+- A reserved field.
+  
+#### 7.3.2 Digital forensics & Cyber Security
+
+So we will save the hashes as well in a file called shadow.txt and we will use the famous password cracker john the ripper in order to crack those hashes.
+
+3. Copy passwd and shadow files to users.txt and shadow.txt
+
+Next we will run the unshadow utility included with John. We will run this utility in order to be able to read the shadow file before we try to crack it. So we will need to execute the command unshadow users.txt shadow.txt > cracked.txt
+
+This command will combine the two files that we have created before into a single file called cracked.txt.Now we are ready to crack those hashes with the command  
+```john cracked.txt```  
+
+John the ripper cracks the password hashes (eventually) and we will have all the usernames and passwords from our target. John generally has three modes - single, wordlist (with rules) & incremental, and using the command john cracked.txt will use those modes in that order.
+
+You can check which passwords have been cracked by running the command ```john -show cracked.txt```, these passwords are stored in john.pot.
+
+If you wish to check if any account with a userid of 0 you can use the command ```john - show -users:0 passwd.1```
+
+If you have a couple of different password files you can get John to work on the files at the same time, by using the following command format: ```john -single passwd.1 passwd.2```
+
+4. Create some test users on your own kali machine, give them all fairly easy short passwords, and then view the passwd and shadow files to see these users. You can use the commands useradd user1 and passwd user1 to create these users. You might also want to remove these users after the lab. userdel –r user1
+   
+5. Unshadow your own passwd and shadow files and try to crack the passwords with john.
+
+6. Use John to try crack the shadow file that is included on the resources section of the pen test page on moodle.
+   
+Now that we have all the passwords we can use them in order to connect remotely to our target. For example if our target is running an SSH server then we use that service. Just one word of warning..you’ll need to be root on a system to see the shadow file… normal users can’t view it. It's also important to note that any password cracker is only as good as its word list. For
+more complex or hybrid passwords, you probably want to use a password list containing far more passwords, including hybrid passwords such "p@$$w0rd" that combine special
+characters into words. John has a pretty good password list itself.
+
+
 ___
