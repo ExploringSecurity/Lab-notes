@@ -26,7 +26,7 @@ We can create a simple wordlist by executing the following command
 This will instruct crunch to create a wordlist that will have minimum length of characters 5,maximum length of characters 5 with the characters of admin and it will save it on a .txt file called pentestlab.  Of course instead of just letters we can create a wordlist that will include only numbers with the command:  
 ```crunch 5 5 12345 -o numbers.txt```
 
-The same method applies and if we want to create a wordlist mixed with letters and numbers.
+The same method applies and if we want to create a wordlist mixed with letters and numbers.  
 ```crunch 5 5 pentestlab123 -o numbersletters.txt```
 
 #### 7.1.2 Special Characters
@@ -37,7 +37,7 @@ For special characters like !$% you will need to execute something like the foll
 This is because some special characters need escaping and the \ is used before the character. 
 
 #### 7.1.3 String Permutations
-Here there are two options.First options is when we will want to generate something based on the characters of a word.For example ```crunch 1 1 -p abc```  will produce the following list:
+Here there are two options.First options is when we will want to generate something based on the characters of a word. For example ```crunch 1 1 -p abc```  will produce the following list:
 
  
 The second option is when we will want to create a list based on different words.For example the words blue and red can be bluered or redblue.We can achieve this with the command  
