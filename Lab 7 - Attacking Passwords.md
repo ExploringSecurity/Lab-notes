@@ -38,11 +38,11 @@ This is because some special characters need escaping and the \ is used before t
 
 #### 7.1.3 String Permutations
 Here there are two options.First options is when we will want to generate something based on the characters of a word. For example ```crunch 1 1 -p abc```  will produce the following list:
-![Picture1.png](images/Picture1.png)
+![Picture1.png](images/Picture1.png)  
  
 The second option is when we will want to create a list based on different words.For example the words blue and red can be bluered or redblue.We can achieve this with the command  
 ```crunch 1 1 -p pen test lab```
-![Picture2.png](images/Picture2.png)
+![Picture2.png](images/Picture2.png)  
  
 #### 7.1.4 Splitting Wordlists
 
