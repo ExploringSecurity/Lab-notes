@@ -57,19 +57,19 @@ This will generate wordlists which will be 1Mb each and with 6 characters size a
 #### 7.1.5 Specify the number of words
 
 Crunch allows us to specify the number of words in each wordlist.This will create a wordlists that it will contain 20 words maximum by taken a specific charset of lalpha which is [abcdefghijklmnopqrstuvwxyz].  
-```crunch 3 3 -f charset.lst lalpha -o START -c 20```
+```crunch 3 3 -f /usr/share/crunch/charset.lst lalpha -o START -c 20```
 
 Alternatively you can use any other charset from the list that comes with crunch if you don’t want to use a custom charset.
 
 #### 7.1.6 Prefix Wordlists
 
 Now lets say that we want to create a wordlist that will contains the word pentestlab followed by 3 random characters.The command for that will be:  
-```crunch 13 13 -f charset.lst lalpha -t pentestlab@@@```
+```crunch 13 13 -f /usr/share/crunch/charset.lst lalpha -t pentestlab@@@```
 which will produce the following output:
 ![Picture3.png](images/Picture3.png)
  
 Alternatively if we want the word admin to be in the middle we can modify the command like this:  
-```crunch 9 9 -f charset.lst -t @@admin@@```
+```crunch 9 9 -f /usr/share/crunch/charset.lst -t @@admin@@```
 
 #### 7.1.7 Conclusion
 
