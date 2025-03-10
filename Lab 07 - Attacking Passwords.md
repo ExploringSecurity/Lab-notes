@@ -143,6 +143,8 @@ Next we will run the unshadow utility included with John. We will run this utili
 This command will combine the two files that we have created before into a single file called cracked.txt.Now we are ready to crack those hashes with the command  
 ```john cracked.txt```  
 
+NOTE: you might have ti use ```john --format=crypt cracked.txt```
+
 John the ripper cracks the password hashes (eventually) and we will have all the usernames and passwords from our target. John generally has three modes - single, wordlist (with rules) & incremental, and using the command john cracked.txt will use those modes in that order.
 
 You can check which passwords have been cracked by running the command ```john -show cracked.txt```, these passwords are stored in john.pot.
