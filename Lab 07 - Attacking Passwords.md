@@ -2,14 +2,14 @@
 
 ___
 
-Passwords are a fundamental element used to protect our security and as such are often attacked as a weak point. Understanding different way to attack passwords is a fundamental skill. In this lab we'll look at techniques that can be helpful for remote attacks and also breaking local password hashes.
+Passwords are a fundamental element used to protect our security and as such are often attacked as a weak point. Understanding different ways to attack passwords is a fundamental skill. In this lab we'll look at techniques that can be helpful for remote attacks and also breaking local password hashes.
 
 ## In this lab we will: 
 
 In this lab we will:
-1. Using Crunch to generate custom word lists
+1. Using Crunch to generate custom wordlists
 2. Learning to use Hydra
-3. Cracking windows and linux password hashes
+3. Cracking linux password hashes
 4. Cracking windows LM Hashes and SAM file
 5. Introduction to Hashcat
 6. THM hash cracking rooms
@@ -17,9 +17,9 @@ In this lab we will:
 ___
 
 
-### 7.1 Using Crunch to generate custom word lists
+### 7.1 Using Crunch to generate custom wordlists
 
-Many times in penetration testing engagements you will discover authentication forms that you will need to bypass in order to gain access to an application or to a remote system. Having a big and a good wordlists always help but as a penetration tester you must be able to create your own custom wordlists depending on the situation. There are a variety of tools that can assist you on this but here we will focus on Crunch.
+Many times in penetration testing engagements you will discover authentication forms that you will need to bypass in order to gain access to an application or to a remote system. Having a good wordlists always helps, but as a penetration tester you must be able to create your own custom wordlists depending on the situation. There are a variety of tools that can assist with this, but here we'll focus on Crunch.
 
 #### 7.1.1 Create a Sample Wordlist
 
